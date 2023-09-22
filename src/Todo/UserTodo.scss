@@ -32,5 +32,16 @@
              color: rgb(8, 185, 8);
              font-weight: bold;
         }
+        
+        .complete{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            span{
+                display: flex;
+                align-items: center;
+            }
+        }
     }
 }

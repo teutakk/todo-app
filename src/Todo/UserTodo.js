@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import "./UserTodo.scss"
+import "./UserTodo.scss"    
 import {BiArrowBack} from "react-icons/bi"
+import {GrCheckboxSelected, GrCheckbox} from "react-icons/gr"
 
 const UserTodo = () => {
 
@@ -31,7 +32,7 @@ const UserTodo = () => {
                     <div className='todo-block'>
                         <p>Task number: {index + 1}</p>
                         <p>Title: {todo.title}</p>
-                        <p>Completed: {(todo.completed).toString()}</p>
+                        <p className='complete'>Completed: <span>{(todo.completed) ? <GrCheckboxSelected /> : <GrCheckbox />} </span> </p>
                     </div>
                 )
             })}
