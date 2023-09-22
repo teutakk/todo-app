@@ -28,5 +28,9 @@
     .todo-block{
         border: 1px solid rgb(232, 232, 232);
         padding: 0 10px;
+        p:first-child{
+             color: rgb(8, 185, 8);
+             font-weight: bold;
+        }
     }
 }
